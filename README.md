@@ -1,7 +1,3 @@
-﻿Claro! Vou criar um exemplo de README explicando os principais pontos do seu projeto **sistema-gestao-decursos-online** baseado na estrutura que você mostrou. Vou considerar que é um sistema web para gestão de cursos online, com funcionalidades como cadastro de usuários, cursos, matrículas, avaliações etc.
-
----
-
 # Sistema de Gestão de Cursos Online
 
 ## Descrição
