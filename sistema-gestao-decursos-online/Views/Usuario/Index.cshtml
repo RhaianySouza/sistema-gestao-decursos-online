@@ -1,0 +1,46 @@
+﻿
+@model List<sistema_gestao_decursos_online.Models.UsuarioModel>
+@{
+    ViewData["Title"] = "Listagem de Usuários";
+}
+<!--
+ * View: Usuario/List
+ * Descrição: Lista todos os usuários cadastrados.
+ * Data de Criação: 02/05/2025
+-->
+<p>
+    <a asp-action="Create" asp-controller="Usuario" class="btn btn-primary">Cadastrar Novo Usuário</a>
+</p>
+
+<div class="card">
+    <div class="card-header bg-info text-white text-center">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped" id="tabela-usuarios">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.First().Nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Email)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Telefone)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var usuario in Model)
+                {
+                    <tr>
+                        <td>@usuario.Nome</td>
+                        <td>@usuario.Email</td>
+                        <td>@usuario.Telefone</td>
+                        <td>
+                            <a asp-controller="Usuario" asp-action="Edit" asp-route-id="@usuario.UsuarioId" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-controller="Usuario" asp-action="Details" asp-route-id="@usuario.UsuarioId" class="btn btn-info btn-sm">Detalhes</a>
+                            <a asp-controller="Usuario" asp-action="Delete" asp-route-id="@usuario.UsuarioId" class="btn btn-danger btn-sm">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

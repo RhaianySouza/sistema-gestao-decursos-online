@@ -1,0 +1,34 @@
+﻿@model sistema_gestao_decursos_online.Models.CursoUsuarioModel
+@{
+    ViewData["Title"] = "Nova Inscrição de Usuário no Curso";
+}
+<!--
+ * View: CursoUsuario/Create
+ * Descrição: Formulário para criação de uma nova associação entre usuário e curso.
+ * Data de Criação: 02/06/2025
+-->
+<h3>@ViewData["Title"]</h3>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="UsuarioId" class="control-label">Usuário</label>
+        <select asp-for="UsuarioId" asp-items="ViewBag.Usuarios" class="form-control">
+            <option value="">-- Selecione o Usuário --</option>
+        </select>
+        <span asp-validation-for="UsuarioId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CursoId" class="control-label">Curso</label>
+        <select asp-for="CursoId" asp-items="ViewBag.Cursos" class="form-control">
+            <option value="">-- Selecione o Curso --</option>
+        </select>
+        <span asp-validation-for="CursoId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Criar Inscrição</button>
+
+    <a asp-action="Index" class="btn btn-secondary mt-3">Voltar</a>
+</form>
+
+<partial name="_ValidationScriptsPartial" />

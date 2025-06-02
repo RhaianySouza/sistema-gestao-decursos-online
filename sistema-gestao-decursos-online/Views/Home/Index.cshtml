@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+    Layout = "_Layout";
+}
+
+<div class="container">
+    <div class="jumbotron bg-white p-4 rounded shadow-sm mb-4">
+        <h1 class="display-4">UNILearn Cursos Online</h1>
+        <p class="lead">Bem-vindo ao sistema de gerenciamento de cursos online. Utilize as funcionalidades para cadastrar usuários, cursos e gerenciar matrículas.</p>
+        <hr class="my-4">
+        <p>Este sistema utiliza tecnologias modernas como ASP.NET Core, Entity Framework Core e Bootstrap.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="bi bi-person"></i> Usuários</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Cadastre e gerencie os usuários do sistema. Visualize o histórico de matrículas de cada um.</p>
+                    <a asp-controller="Usuario" asp-action="Index" class="btn btn-outline-info">
+                        <i class="bi bi-arrow-right"></i> Acessar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="bi bi-journal-bookmark"></i> Cursos</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Cadastre e gerencie os cursos disponíveis. Veja detalhes como carga horária e descrição.</p>
+                    <a asp-controller="Curso" asp-action="Index" class="btn btn-outline-info">
+                        <i class="bi bi-arrow-right"></i> Acessar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="bi bi-card-checklist"></i> Matrículas</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Realize novas matrículas, gerencie as existentes e consulte o histórico por curso ou usuário.</p>
+                    <a asp-controller="Matricula" asp-action="Index" class="btn btn-outline-info">
+                        <i class="bi bi-arrow-right"></i> Acessar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

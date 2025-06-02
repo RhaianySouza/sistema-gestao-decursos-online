@@ -1,0 +1,59 @@
+﻿@model sistema_gestao_decursos_online.Models.MatriculaModel
+
+@{
+    ViewData["Title"] = "Editar Matrícula";
+}
+<!--
+ * View: Matricula/Edit
+ * Descrição: Formulário para edição de dados de uma matrícula existente.
+ * Data de Criação: 02/06/2025
+-->
+<h1>@ViewData["Title"]</h1>
+
+<h4>Matrícula</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" asp-controller="Matricula" method="post">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="MatriculaId" />
+
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label">Usuário</label>
+                <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.Usuarios"></select>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CursoId" class="control-label">Curso</label>
+                <select asp-for="CursoId" class="form-control" asp-items="ViewBag.Cursos"></select>
+                <span asp-validation-for="CursoId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DataMatricula" class="control-label">Data da Matrícula</label>
+                <input asp-for="DataMatricula" class="form-control" type="date" />
+                <span asp-validation-for="DataMatricula" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Status" class="control-label">Status</label>
+                <select asp-for="Status" class="form-control">
+                    <option value="">Selecione o status</option>
+                    <option value="Ativo">Ativo</option>
+                    <option value="Concluído">Concluído</option>
+                    <option value="Cancelado">Cancelado</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,52 @@
+﻿@model List<sistema_gestao_decursos_online.Models.AvaliacaoModel>
+
+@{
+    ViewData["Title"] = "Listagem de Avaliações";
+}
+<!--
+ * View: Matricula/List
+ * Descrição: Lista todas as matrículas realizadas.
+ * Data de Criação: 02/05/2025
+-->
+<p>
+    <a asp-action="Create" asp-controller="Avaliacao" class="btn btn-primary">Cadastrar Nova Avaliação</a>
+</p>
+
+<div class="card">
+    <div class="card-header bg-success text-white text-center">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped" id="tabela-avaliacoes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuário</th>
+                    <th>Curso</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Nota)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Comentario)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Data)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var avaliacao in Model)
+                {
+                    <tr>
+                        <td>@avaliacao.AvaliacaoId</td>
+                        <td>@avaliacao.Usuario?.Nome</td>
+                        <td>@avaliacao.Curso?.Titulo</td>
+                        <td>@avaliacao.Nota</td>
+                        <td>@avaliacao.Comentario</td>
+                        <td>@avaliacao.Data.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <a asp-controller="Avaliacao" asp-action="Edit" asp-route-id="@avaliacao.AvaliacaoId" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-controller="Avaliacao" asp-action="Details" asp-route-id="@avaliacao.AvaliacaoId" class="btn btn-info btn-sm">Detalhes</a>
+                            <a asp-controller="Avaliacao" asp-action="Delete" asp-route-id="@avaliacao.AvaliacaoId" class="btn btn-danger btn-sm">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

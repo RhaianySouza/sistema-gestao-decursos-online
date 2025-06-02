@@ -1,0 +1,36 @@
+﻿
+
+@model sistema_gestao_decursos_online.Models.UsuarioModel
+}
+<!--
+ * View: Usuario/Delete
+ * Descrição: Confirmação para exclusão de um usuário.
+ * Data de Criação: 29/04/2025
+-->
+<h1>Excluir Usuário</h1>
+
+<h3>Tem certeza que deseja excluir este usuário?</h3>
+
+<div>
+    <h4>Detalhes do Usuário</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.UsuarioId</dd>
+
+        <dt class="col-sm-2">Nome</dt>
+        <dd class="col-sm-10">@Model.Nome</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Email</dd>
+
+        <dt class="col-sm-2">Telefone</dt>
+        <dd class="col-sm-10">@Model.Telefone</dd>
+    </dl>
+</div>
+
+<form asp-action="DeleteConfirmed" asp-route-id="@Model.UsuarioId" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

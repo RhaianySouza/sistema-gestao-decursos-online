@@ -1,0 +1,44 @@
+﻿
+@model sistema_gestao_decursos_online.Models.CursoModel
+<partial name="_ValidationScriptsPartial" />
+
+@{
+    ViewData["Title"] = "Criar Curso";
+}
+<!--
+ * View: Curso/Create
+ * Descrição: Formulário para criação de um novo curso.
+ * Data de Criação: 02/06/2025
+-->
+<h3>Criar Curso</h3>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form asp-action="Curso" method="post">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label asp-for="Titulo" class="control-label"></label>
+                    <input asp-for="Titulo" type="text" class="form-control" placeholder="Título do Curso" />
+                    <span asp-validation-for="Titulo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Descricao" class="control-label"></label>
+                    <textarea asp-for="Descricao" class="form-control" placeholder="Descrição do Curso"></textarea>
+                    <span asp-validation-for="Descricao" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CargaHoraria" class="control-label"></label>
+                    <input asp-for="CargaHoraria" type="number" class="form-control" placeholder="Carga Horária (em horas)" />
+                    <span asp-validation-for="CargaHoraria" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Criar Curso</button>
+
+                <div class="form-group mt-3">
+                    <a asp-action="Curso" asp-action="Index" class="btn btn-secondary">Voltar à Lista de Cursos</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

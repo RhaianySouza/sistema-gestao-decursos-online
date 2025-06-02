@@ -1,0 +1,63 @@
+﻿@model sistema_gestao_decursos_online.Models.AvaliacaoModel
+
+@{
+    ViewData["Title"] = "Criar Avaliação";
+}
+<!--
+ * View: Avaliacao/Create
+ * Descrição: Formulário para criação de uma nova avaliação.
+ * Data de Criação: 02/05/2025
+-->
+<partial name="_ValidationScriptsPartial" />
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form asp-controller="Avaliacao" asp-action="Create" method="post">
+            <div class="col-md-8">
+
+                <div class="form-group">
+                    <label asp-for="UsuarioId" class="control-label">Usuário</label>
+                    <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.Usuarios">
+                        <option value="">-- Selecione um Usuário --</option>
+                    </select>
+                    <span asp-validation-for="UsuarioId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CursoId" class="control-label">Curso</label>
+                    <select asp-for="CursoId" class="form-control" asp-items="ViewBag.Cursos">
+                        <option value="">-- Selecione um Curso --</option>
+                    </select>
+                    <span asp-validation-for="CursoId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Nota" class="control-label">Nota (1 a 10)</label>
+                    <input asp-for="Nota" type="number" min="1" max="10" class="form-control" />
+                    <span asp-validation-for="Nota" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Comentario" class="control-label">Comentário</label>
+                    <textarea asp-for="Comentario" class="form-control" rows="4" maxlength="500" placeholder="Opcional"></textarea>
+                    <span asp-validation-for="Comentario" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Data" class="control-label">Data da Avaliação</label>
+                    <input asp-for="Data" type="date" class="form-control" />
+                    <span asp-validation-for="Data" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Criar Avaliação</button>
+
+                <div class="form-group mt-3">
+                    <a asp-controller="Avaliacao" asp-action="Index" class="btn btn-secondary">Voltar à Lista de Avaliações</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

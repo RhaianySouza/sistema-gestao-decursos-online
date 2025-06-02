@@ -1,0 +1,48 @@
+﻿@model List<sistema_gestao_decursos_online.Models.MatriculaModel>
+
+@{
+    ViewData["Title"] = "Listagem de Matrículas";
+}
+<!--
+ * View: Matricula/List
+ * Descrição: Lista todas as matrículas realizadas.
+ * Data de Criação: 02/06/2025
+-->
+<p>
+    <a asp-action="Create" asp-controller="Matricula" class="btn btn-primary">Nova Matrícula</a>
+</p>
+
+<div class="card">
+    <div class="card-header bg-info text-white text-center">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped" id="tabela-matriculas">
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Curso</th>
+                    <th>Data da Matrícula</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var matricula in Model)
+                {
+                    <tr>
+                        <td>@matricula.Usuario?.Nome</td>
+                        <td>@matricula.Curso?.Titulo</td>
+                        <td>@matricula.DataMatricula.ToString("dd/MM/yyyy")</td>
+                        <td>@matricula.Status</td>
+                        <td>
+                            <a asp-controller="Matricula" asp-action="Edit" asp-route-id="@matricula.MatriculaId" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-controller="Matricula" asp-action="Details" asp-route-id="@matricula.MatriculaId" class="btn btn-info btn-sm">Detalhes</a>
+                            <a asp-controller="Matricula" asp-action="Delete" asp-route-id="@matricula.MatriculaId" class="btn btn-danger btn-sm">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

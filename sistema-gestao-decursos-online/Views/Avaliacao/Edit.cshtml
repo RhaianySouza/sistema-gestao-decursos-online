@@ -1,0 +1,65 @@
+﻿@model sistema_gestao_decursos_online.Models.AvaliacaoModel
+
+@{
+    ViewData["Title"] = "Editando Avaliação";
+}
+<!--
+ * View: Matricula/Edit
+ * Descrição: Formulário para edição de dados de uma matrícula existente.
+ * Data de Criação: 02/05/2025
+-->
+<h1>Editar Avaliação</h1>
+
+<h4>Avaliação</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" method="post">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="AvaliacaoId" />
+
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label">Usuário</label>
+                <select asp-for="UsuarioId" class="form-control" asp-items="@(new SelectList(ViewData["Usuarios"] as IEnumerable<sistema_gestao_decursos_online.Models.UsuarioModel>, "UsuarioId", "Nome"))">
+                    <option value="">-- Selecione o Usuário --</option>
+                </select>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CursoId" class="control-label">Curso</label>
+                <select asp-for="CursoId" class="form-control" asp-items="@(new SelectList(ViewData["Cursos"] as IEnumerable<sistema_gestao_decursos_online.Models.CursoModel>, "CursoId", "Titulo"))">
+                    <option value="">-- Selecione o Curso --</option>
+                </select>
+                <span asp-validation-for="CursoId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Nota" class="control-label"></label>
+                <input asp-for="Nota" class="form-control" />
+                <span asp-validation-for="Nota" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Comentario" class="control-label"></label>
+                <textarea asp-for="Comentario" class="form-control"></textarea>
+                <span asp-validation-for="Comentario" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" type="date" />
+                <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

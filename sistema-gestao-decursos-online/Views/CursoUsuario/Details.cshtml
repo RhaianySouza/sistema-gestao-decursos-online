@@ -1,0 +1,37 @@
+﻿
+@model sistema_gestao_decursos_online.Models.CursoUsuarioModel
+<!--
+ * View: CursoUsuario/Details
+ * Descrição: Exibe detalhes de uma associação específica entre usuário e curso.
+ * Data de Criação: 02/06/2025
+-->
+<h1>Detalhes da Inscrição do Usuário no Curso</h1>
+
+<div>
+    <h4>Inscrição</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID da Inscrição</dt>
+        <dd class="col-sm-10">@Model.Id</dd>
+
+        <dt class="col-sm-2">Usuário</dt>
+        <dd class="col-sm-10">@Model.Usuario?.Nome</dd>
+
+        <dt class="col-sm-2">Email do Usuário</dt>
+        <dd class="col-sm-10">@Model.Usuario?.Email</dd>
+
+        <dt class="col-sm-2">Curso</dt>
+        <dd class="col-sm-10">@Model.Curso?.Titulo</dd>
+
+        <dt class="col-sm-2">Descrição do Curso</dt>
+        <dd class="col-sm-10">@Model.Curso?.Descricao</dd>
+
+        <dt class="col-sm-2">Carga Horária (horas)</dt>
+        <dd class="col-sm-10">@Model.Curso?.CargaHoraria</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+</div>

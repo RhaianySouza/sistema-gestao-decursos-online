@@ -1,0 +1,49 @@
+﻿
+@model sistema_gestao_decursos_online.Models.UsuarioModel
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+@{
+    ViewData["Title"] = "Editando Usuário";
+}
+<!--
+ * View: Usuario/Edit
+ * Descrição: Formulário para edição de dados de um usuário existente.
+ * Data de Criação: 02/05/2025
+-->
+<h1>Editar Usuário</h1>
+
+<h4>Usuário</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" asp-controller="Usuario" method="post">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="UsuarioId" />
+
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        </form>
+    </div>
+</div>

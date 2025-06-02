@@ -1,0 +1,27 @@
+﻿@model sistema_gestao_decursos_online.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Ops! Algo deu errado";
+}
+
+<div class="container text-center mt-5">
+    <h1 class="text-danger">😕 Ocorreu um erro</h1>
+    <h4 class="text-muted">Estamos com dificuldades para processar sua solicitação.</h4>
+
+    @if (!string.IsNullOrEmpty(Model?.RequestId))
+    {
+        <p class="mt-4">
+            <strong>ID da Requisição:</strong> <code>@Model.RequestId</code>
+        </p>
+    }
+
+    <div class="alert alert-warning mt-4" role="alert">
+        <strong>Ambiente de Desenvolvimento:</strong> Ativar o ambiente <code>Development</code> permite exibir detalhes do erro.<br />
+        <span class="text-danger">Evite isso em produção!</span>
+    </div>
+
+    <p>
+        Para ativar, defina a variável de ambiente <code>ASPNETCORE_ENVIRONMENT</code> como <strong>Development</strong> e reinicie o aplicativo.
+    </p>
+
+    <a class="btn btn-primary mt-4" asp-controller="Home" asp-action="Index">Voltar para a página inicial</a>
+</div>

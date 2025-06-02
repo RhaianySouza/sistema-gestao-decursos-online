@@ -1,0 +1,50 @@
+﻿
+@model sistema_gestao_decursos_online.Models.CursoModel
+
+@{
+    ViewData["Title"] = "Editando Curso";
+}
+<!--
+ * View: Curso/Edit
+ * Descrição: Formulário para edição de dados de um curso existente.
+ * Data de Criação: 02/06/2025
+-->
+<h1>Editar Curso</h1>
+
+<h4>Curso</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" asp-controller="Curso" method="post">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="CursoId" />
+
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <textarea asp-for="Descricao" class="form-control"></textarea>
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CargaHoraria" class="control-label"></label>
+                <input asp-for="CargaHoraria" class="form-control" />
+                <span asp-validation-for="CargaHoraria" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

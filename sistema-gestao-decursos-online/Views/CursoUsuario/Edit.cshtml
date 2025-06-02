@@ -1,0 +1,43 @@
+﻿
+@model sistema_gestao_decursos_online.Models.CursoUsuarioModel
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+@{
+    ViewData["Title"] = "Editando Inscrição de Curso do Usuário";
+}
+<!--
+ * View: CursoUsuario/Edit
+ * Descrição: Formulário para edição de uma associação entre usuário e curso.
+ * Data de Criação: 02/06/2025
+-->
+<h1>Editar Inscrição</h1>
+
+<h4>Inscrição Usuário-Curso</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" asp-controller="UsuarioCurso" method="post">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label">Usuário</label>
+                <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.Usuarios"></select>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CursoId" class="control-label">Curso</label>
+                <select asp-for="CursoId" class="form-control" asp-items="ViewBag.Cursos"></select>
+                <span asp-validation-for="CursoId" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        </form>
+    </div>
+</div>

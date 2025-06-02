@@ -1,0 +1,40 @@
+﻿@model sistema_gestao_decursos_online.Models.AvaliacaoModel
+
+@{
+    ViewData["Title"] = "Detalhes da Avaliação";
+}
+<!--
+ * View: Avaliacao/Details
+ * Descrição: Exibe detalhes de uma avaliação específica.
+ * Data de Criação: 02/05/2025
+-->
+<h1>Detalhes da Avaliação</h1>
+
+<div>
+    <h4>Avaliação</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.AvaliacaoId</dd>
+
+        <dt class="col-sm-2">Usuário</dt>
+        <dd class="col-sm-10">@Model.Usuario?.Nome ?? "Usuário não encontrado"</dd>
+
+        <dt class="col-sm-2">Curso</dt>
+        <dd class="col-sm-10">@Model.Curso?.Titulo ?? "Curso não encontrado"</dd>
+
+        <dt class="col-sm-2">Nota</dt>
+        <dd class="col-sm-10">@Model.Nota</dd>
+
+        <dt class="col-sm-2">Comentário</dt>
+        <dd class="col-sm-10">@Model.Comentario ?? "(Nenhum comentário)"</dd>
+
+        <dt class="col-sm-2">Data</dt>
+        <dd class="col-sm-10">@Model.Data.ToString("dd/MM/yyyy")</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AvaliacaoId" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+</div>

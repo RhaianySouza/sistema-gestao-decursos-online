@@ -1,0 +1,33 @@
+﻿
+@model sistema_gestao_decursos_online.Models.UsuarioModel
+@{
+}
+<!--
+ * View: Usuario/Details
+ * Descrição: Exibe detalhes de um usuário específico.
+ * Data de Criação: 02/05/2025
+-->
+<h1>Detalhes do Usuário</h1>
+
+<div>
+    <h4>Usuário</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.UsuarioId</dd>
+
+        <dt class="col-sm-2">Nome</dt>
+        <dd class="col-sm-10">@Model.Nome</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Email</dd>
+
+        <dt class="col-sm-2">Telefone</dt>
+        <dd class="col-sm-10">@Model.Telefone</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.UsuarioId" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+</div>

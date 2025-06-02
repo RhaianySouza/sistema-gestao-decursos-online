@@ -1,0 +1,44 @@
+﻿@model List<sistema_gestao_decursos_online.Models.CursoUsuarioModel>
+
+@{
+    ViewData["Title"] = "Listagem de Inscrições de Cursos";
+}
+<!--
+ * View: CursoUsuario/List
+ * Descrição: Lista todas as associações entre usuários e cursos.
+ * Data de Criação: 02/06/2025
+-->
+<p>
+    <a asp-action="Create" asp-controller="UsuarioCurso" class="btn btn-primary">Cadastrar Nova Inscrição</a>
+</p>
+
+<div class="card">
+    <div class="card-header bg-info text-white text-center">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped" id="tabela-inscricoes">
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Curso</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var inscricao in Model)
+                {
+                    <tr>
+                        <td>@inscricao.Usuario?.Nome</td>
+                        <td>@inscricao.Curso?.Titulo</td>
+                        <td>
+                            <a asp-controller="UsuarioCurso" asp-action="Edit" asp-route-id="@inscricao.Id" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-controller="UsuarioCurso" asp-action="Details" asp-route-id="@inscricao.Id" class="btn btn-info btn-sm">Detalhes</a>
+                            <a asp-controller="UsuarioCurso" asp-action="Delete" asp-route-id="@inscricao.Id" class="btn btn-danger btn-sm">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

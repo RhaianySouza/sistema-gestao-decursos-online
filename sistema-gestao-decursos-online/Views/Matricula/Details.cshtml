@@ -1,0 +1,37 @@
+﻿@model sistema_gestao_decursos_online.Models.MatriculaModel
+
+@{
+    ViewData["Title"] = "Detalhes da Matrícula";
+}
+<!--
+ * View: Matricula/Details
+ * Descrição: Exibe detalhes de uma matrícula específica.
+ * Data de Criação: 02/06/2025
+-->
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Matrícula</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">ID da Matrícula</dt>
+        <dd class="col-sm-9">@Model.MatriculaId</dd>
+
+        <dt class="col-sm-3">Usuário</dt>
+        <dd class="col-sm-9">@Model.Usuario?.Nome</dd>
+
+        <dt class="col-sm-3">Curso</dt>
+        <dd class="col-sm-9">@Model.Curso?.Titulo</dd>
+
+        <dt class="col-sm-3">Data da Matrícula</dt>
+        <dd class="col-sm-9">@Model.DataMatricula.ToString("dd/MM/yyyy")</dd>
+
+        <dt class="col-sm-3">Status</dt>
+        <dd class="col-sm-9">@Model.Status</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MatriculaId" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+</div>

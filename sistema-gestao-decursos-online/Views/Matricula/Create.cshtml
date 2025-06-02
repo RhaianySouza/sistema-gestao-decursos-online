@@ -1,0 +1,62 @@
+﻿@model sistema_gestao_decursos_online.Models.MatriculaModel
+
+@{
+    ViewData["Title"] = "Criar Matrícula";
+}
+<!--
+ * View: Matricula/Create
+ * Descrição: Formulário para criação de uma nova matrícula em curso.
+ * Data de Criação: 02/06/2025
+-->
+<partial name="_ValidationScriptsPartial" />
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form asp-controller="Matricula" asp-action="Create" method="post">
+            <div class="col-md-8">
+
+                <div class="form-group">
+                    <label asp-for="UsuarioId" class="control-label">Usuário</label>
+                    <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.Usuarios">
+                        <option value="">-- Selecione um Usuário --</option>
+                    </select>
+                    <span asp-validation-for="UsuarioId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CursoId" class="control-label">Curso</label>
+                    <select asp-for="CursoId" class="form-control" asp-items="ViewBag.Cursos">
+                        <option value="">-- Selecione um Curso --</option>
+                    </select>
+                    <span asp-validation-for="CursoId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DataMatricula" class="control-label">Data da Matrícula</label>
+                    <input asp-for="DataMatricula" type="date" class="form-control" />
+                    <span asp-validation-for="DataMatricula" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label">Status</label>
+                    <select asp-for="Status" class="form-control">
+                        <option value="">-- Selecione um Status --</option>
+                        <option value="Ativo">Ativo</option>
+                        <option value="Concluído">Concluído</option>
+                        <option value="Cancelado">Cancelado</option>
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Criar Matrícula</button>
+
+                <div class="form-group mt-3">
+                    <a asp-controller="Matricula" asp-action="Index" class="btn btn-secondary">Voltar à Lista de Matrículas</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
