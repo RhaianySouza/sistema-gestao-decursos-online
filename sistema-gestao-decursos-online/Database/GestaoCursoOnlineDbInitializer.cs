@@ -63,8 +63,8 @@ namespace sistema_gestao_decursos_online.Database
             // Dados iniciais de matrículas
             var matriculas = new MatriculaModel[]
             {
-                new MatriculaModel {CursoId = 1, UsuarioId = 1, DataMatricula = DateTime.Now },
-                new MatriculaModel {CursoId = 2, UsuarioId = 2, DataMatricula = DateTime.Now }
+                new MatriculaModel {CursoId = 1, UsuarioId = 1, DataMatricula = DateTime.Now, Status = "Concluido" },
+                new MatriculaModel {CursoId = 2, UsuarioId = 2, DataMatricula = DateTime.Now, Status = "Pendente"}
             };
 
             foreach (var m in matriculas)
@@ -72,6 +72,21 @@ namespace sistema_gestao_decursos_online.Database
                 context.Matriculas.Add(m);
             }
             context.SaveChanges();
+            // Dados iniciais de avaliações
+            var avaliacoes = new AvaliacaoModel[]
+            {
+                new AvaliacaoModel{MatriculaId = 1, Nota = 9, Comentario = "Excelente curso! Muito bem estruturado.", Data = DateTime.Now.AddDays(-5)},
+                new AvaliacaoModel{MatriculaId = 2, Nota = 7, Comentario = "Bom curso, mas poderia ter mais exercícios práticos.",Data = DateTime.Now.AddDays(-2)}
+            };
+
+            foreach (var avaliacao in avaliacoes)
+            {
+                context.Avaliacoes.Add(avaliacao);
+            }
+
+            context.SaveChanges();
+
+
         }
     }
 }

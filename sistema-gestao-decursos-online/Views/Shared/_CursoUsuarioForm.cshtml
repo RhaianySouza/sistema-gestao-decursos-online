@@ -1,0 +1,21 @@
+﻿@model sistema_gestao_decursos_online.Models.CursoUsuarioModel
+
+<div class="form-group">
+    <label asp-for="UsuarioId" class="control-label">Usuário</label>
+    <select asp-for="UsuarioId" asp-items="ViewBag.Usuarios" class="form-control">
+        <option value="">-- Selecione o Usuário --</option>
+    </select>
+    <span asp-validation-for="UsuarioId" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="CursoId" class="control-label">Curso</label>
+    <select asp-for="CursoId" asp-items="ViewBag.Cursos" class="form-control">
+        <option value="">-- Selecione o Curso --</option>
+    </select>
+    <span asp-validation-for="CursoId" class="text-danger"></span>
+</div>
+
+<button type="submit" class="btn btn-primary mt-3">Salvar</button>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Voltar</a>

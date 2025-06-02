@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Listagem de Avaliações";
+    Layout = "_Layout";
 }
 <!--
  * View: Matricula/List
@@ -34,8 +35,9 @@
                 {
                     <tr>
                         <td>@avaliacao.AvaliacaoId</td>
-                        <td>@avaliacao.Usuario?.Nome</td>
-                        <td>@avaliacao.Curso?.Titulo</td>
+						<td>@avaliacao.Matricula?.MatriculaId</td>
+                        <td>@avaliacao.Matricula.Usuario?.Nome</td>
+                        <td>@avaliacao.Matricula.Curso?.Titulo</td>
                         <td>@avaliacao.Nota</td>
                         <td>@avaliacao.Comentario</td>
                         <td>@avaliacao.Data.ToString("dd/MM/yyyy")</td>

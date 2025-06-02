@@ -4,13 +4,14 @@
 
 @{
     ViewData["Title"] = "Criar Curso";
+    Layout = "_Layout";
 }
 <!--
  * View: Curso/Create
  * Descrição: Formulário para criação de um novo curso.
  * Data de Criação: 02/06/2025
 -->
-<h3>Criar Curso</h3>
+<h3>@ViewData["Title"]</h3>
 <div class="panel panel-default">
     <div class="panel-body">
         <form asp-action="Curso" method="post">

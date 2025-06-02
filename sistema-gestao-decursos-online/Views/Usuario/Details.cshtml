@@ -1,6 +1,8 @@
 ﻿
 @model sistema_gestao_decursos_online.Models.UsuarioModel
 @{
+    ViewData["Title"] = "Criar Usuário";
+    Layout = "_Layout";
 }
 <!--
  * View: Usuario/Details
@@ -10,7 +12,7 @@
 <h1>Detalhes do Usuário</h1>
 
 <div>
-    <h4>Usuário</h4>
+    <h4>@ViewData["Title"]</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">ID</dt>

@@ -100,16 +100,18 @@ namespace sistema_gestao_decursos_online.Controllers
         }
 
         // GET: /CursoUsuario/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int? cursoId, int? usuarioId)
         {
-            if (id == null) return NotFound();
+            if (cursoId == null || usuarioId == null)
+                return NotFound();
 
             var cursoUsuario = await _context.CursosUsuarios
                 .Include(cu => cu.Usuario)
                 .Include(cu => cu.Curso)
-                .FirstOrDefaultAsync(cu => cu.Id == id);
+                .FirstOrDefaultAsync(cu => cu.CursoId == cursoId && cu.UsuarioId == usuarioId);
 
-            if (cursoUsuario == null) return NotFound();
+            if (cursoUsuario == null)
+                return NotFound();
 
             return View(cursoUsuario);
         }
@@ -117,11 +119,17 @@ namespace sistema_gestao_decursos_online.Controllers
         // POST: /CursoUsuario/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int cursoId, int usuarioId)
         {
-            var cursoUsuario = await _context.CursosUsuarios.FindAsync(id);
+            var cursoUsuario = await _context.CursosUsuarios
+                .FirstOrDefaultAsync(cu => cu.CursoId == cursoId && cu.UsuarioId == usuarioId);
+
+            if (cursoUsuario == null)
+                return NotFound();
+
             _context.CursosUsuarios.Remove(cursoUsuario);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 

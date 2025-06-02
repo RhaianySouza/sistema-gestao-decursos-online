@@ -1,13 +1,15 @@
-﻿
-
-@model sistema_gestao_decursos_online.Models.UsuarioModel
+﻿@model sistema_gestao_decursos_online.Models.UsuarioModel
+}
+@{
+    ViewData["Title"] = "Criar Usuário";
+    Layout = "_Layout";
 }
 <!--
  * View: Usuario/Delete
  * Descrição: Confirmação para exclusão de um usuário.
  * Data de Criação: 29/04/2025
 -->
-<h1>Excluir Usuário</h1>
+<h1>@ViewData["Title"]</h1>
 
 <h3>Tem certeza que deseja excluir este usuário?</h3>
 

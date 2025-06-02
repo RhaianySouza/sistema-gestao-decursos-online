@@ -168,3 +168,14 @@ C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decu
 C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\obj\Debug\net8.0\sistema-gestao-decursos-online.pdb
 C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\obj\Debug\net8.0\sistema-gestao-decursos-online.genruntimeconfig.cache
 C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\obj\Debug\net8.0\ref\sistema-gestao-decursos-online.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\obj\Debug\net8.0\sistema-gestao-decursos-online.sourcelink.json
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\obj\Debug\net8.0\sistema-gestao-decursos-online.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Rhaiany\source\repos\sistema-gestao-decursos-online\sistema-gestao-decursos-online\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

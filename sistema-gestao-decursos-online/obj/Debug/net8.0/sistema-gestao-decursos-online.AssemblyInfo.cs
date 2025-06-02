@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sistema-gestao-decursos-online")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75122c56e61fb61cd07bfc19e809522fb133e8c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("sistema-gestao-decursos-online")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sistema-gestao-decursos-online")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

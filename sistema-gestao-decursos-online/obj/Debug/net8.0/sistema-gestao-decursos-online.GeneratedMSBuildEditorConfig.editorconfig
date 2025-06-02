@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY2FvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Rhaiany/source/repos/sistema-gestao-decursos-online/sistema-gestao-decursos-online/Views/Clima/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Rhaiany/source/repos/sistema-gestao-decursos-online/sistema-gestao-decursos-online/Views/CursoUsuario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29Vc3VhcmlvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -126,6 +130,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Rhaiany/source/repos/sistema-gestao-decursos-online/sistema-gestao-decursos-online/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rhaiany/source/repos/sistema-gestao-decursos-online/sistema-gestao-decursos-online/Views/Shared/_CursoUsuarioForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXJzb1VzdWFyaW9Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rhaiany/source/repos/sistema-gestao-decursos-online/sistema-gestao-decursos-online/Views/Shared/_ImpossibleDeleteWarning.cshtml]

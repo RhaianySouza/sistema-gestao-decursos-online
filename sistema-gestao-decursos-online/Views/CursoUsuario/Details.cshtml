@@ -1,11 +1,15 @@
 ﻿
 @model sistema_gestao_decursos_online.Models.CursoUsuarioModel
+@{
+	ViewData["Title"] = "Detalhes da Inscrição do Usuário no Curso";
+	Layout = "_Layout";
+}
 <!--
  * View: CursoUsuario/Details
  * Descrição: Exibe detalhes de uma associação específica entre usuário e curso.
  * Data de Criação: 02/06/2025
 -->
-<h1>Detalhes da Inscrição do Usuário no Curso</h1>
+<h1>@ViewData["Title"]</h1>
 
 <div>
     <h4>Inscrição</h4>

@@ -9,9 +9,30 @@ builder.Services.AddControllersWithViews();
 var connectionString = builder.Configuration.GetConnectionString("gestaoCursosOnlineDbConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
+// Configuração do HttpClient para chamadas externas
+builder.Services.AddHttpClient();
+// Configuração do AutoMapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+// Configuração do Swagger para documentação da API
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { 
+        Title = "Sistema de Gestão de Cursos Online", 
+        Version = "v1" 
+    });
+});
+    
 // Add services to the container.
 
 var app = builder.Build();
+
+// Swagger
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(); //gerar swagger
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -30,6 +51,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Inicialização do banco de dados
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;

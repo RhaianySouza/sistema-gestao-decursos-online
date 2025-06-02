@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\models\\matricula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\models\\matricula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\models\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\models\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\models\\cursousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\models\\cursousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\controllers\\swaggerapicontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|solutionrelative:sistema-gestao-decursos-online\\controllers\\swaggerapicontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32E7E3A4-B305-4A02-8B0A-1438799D6D14}|sistema-gestao-decursos-online\\sistema-gestao-decursos-online.csproj|c:\\users\\rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\database\\gestaocursoonlinedbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,129 +25,63 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 968,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 733,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 50,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\README.md",
-              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\README.md",
-              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\README.md",
-              "RelativeToolTip": "sistema-gestao-decursos-online\\README.md",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAG4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-06-02T09:52:17.408Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Matricula.cs",
-              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Matricula.cs",
-              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Models\\Matricula.cs",
-              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Matricula.cs",
-              "RelativeToolTip": "sistema-gestao-decursos-online\\Models\\Matricula.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAwwCUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:42:53.778Z",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "sistema-gestao-decursos-online\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswDYAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T19:53:53.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Avaliacao.cs",
-              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Avaliacao.cs",
-              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Models\\Avaliacao.cs",
-              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Avaliacao.cs",
-              "RelativeToolTip": "sistema-gestao-decursos-online\\Models\\Avaliacao.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCEAAAABAAAAAAAAAA==",
+              "Title": "SwaggerApiController .cs",
+              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Controllers\\SwaggerApiController .cs",
+              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Controllers\\SwaggerApiController .cs",
+              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Controllers\\SwaggerApiController .cs",
+              "RelativeToolTip": "sistema-gestao-decursos-online\\Controllers\\SwaggerApiController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:33:53.281Z",
+              "WhenOpened": "2025-06-02T19:49:45.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Database\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Database\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Database\\ApplicationDbContext.cs",
-              "RelativeToolTip": "sistema-gestao-decursos-online\\Database\\ApplicationDbContext.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAgwEcAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Program.cs",
+              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Program.cs",
+              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Program.cs",
+              "RelativeToolTip": "sistema-gestao-decursos-online\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwCcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T08:44:02.404Z",
+              "WhenOpened": "2025-06-02T19:48:06.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CursoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\CursoUsuario.cs",
-              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Models\\CursoUsuario.cs",
-              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\CursoUsuario.cs",
-              "RelativeToolTip": "sistema-gestao-decursos-online\\Models\\CursoUsuario.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:48:19.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Curso.cs",
-              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Curso.cs",
-              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Models\\Curso.cs",
-              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Curso.cs",
-              "RelativeToolTip": "sistema-gestao-decursos-online\\Models\\Curso.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:50:55.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Models\\Usuario.cs",
-              "RelativeToolTip": "sistema-gestao-decursos-online\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwB8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:50:29.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "GestaoCursoOnlineDbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Database\\GestaoCursoOnlineDbInitializer.cs",
               "RelativeDocumentMoniker": "sistema-gestao-decursos-online\\Database\\GestaoCursoOnlineDbInitializer.cs",
               "ToolTip": "C:\\Users\\Rhaiany\\source\\repos\\sistema-gestao-decursos-online\\sistema-gestao-decursos-online\\Database\\GestaoCursoOnlineDbInitializer.cs",
               "RelativeToolTip": "sistema-gestao-decursos-online\\Database\\GestaoCursoOnlineDbInitializer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwEoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T08:01:09.255Z",
+              "WhenOpened": "2025-06-02T19:37:17.197Z",
               "EditorCaption": ""
             }
           ]

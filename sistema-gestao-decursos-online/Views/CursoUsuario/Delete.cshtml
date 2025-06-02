@@ -1,12 +1,16 @@
 ﻿
 @model sistema_gestao_decursos_online.Models.CursoUsuarioModel
+@{
+	ViewData["Title"] = "Excluir Inscrição de Usuário no Curso";
+	Layout = "_Layout";
+}
 <!--
  * View: CursoUsuario/Delete
  * Descrição: Confirmação para exclusão de uma associação entre usuário e curso.
  * Data de Criação: 02/06/2025
 -->
 
-<h1>Excluir Inscrição do Usuário no Curso</h1>
+<h1>@ViewData["Title"]</h1>
 
 <h3>Tem certeza que deseja excluir esta inscrição?</h3>
 

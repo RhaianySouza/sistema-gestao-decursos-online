@@ -2,13 +2,14 @@
 
 @{
     ViewData["Title"] = "Excluir Avaliação";
+    Layout = "_Layout";
 }
 <!--
  * View: Avaliacao/Delete
  * Descrição: Confirmação para exclusão de uma avaliação.
  * Data de Criação: 02/05/2025
 -->
-<h1>Excluir Avaliação</h1>
+<h1>@ViewData["Title"]</h1>
 
 <h3>Tem certeza que deseja excluir esta avaliação?</h3>
 
@@ -20,11 +21,14 @@
         <dt class="col-sm-2">ID</dt>
         <dd class="col-sm-10">@Model.AvaliacaoId</dd>
 
+        <dt class="col-sm-2">Matricula</dt>
+        <dd class="col-sm-10">@Model.Matricula?.MatriculaId</dd>
+
         <dt class="col-sm-2">Usuário</dt>
-        <dd class="col-sm-10">@Model.Usuario?.Nome</dd>
+        <dd class="col-sm-10">@Model.Matricula?.Usuario?.Nome</dd>
 
         <dt class="col-sm-2">Curso</dt>
-        <dd class="col-sm-10">@Model.Curso?.Titulo</dd>
+        <dd class="col-sm-10">@Model.Matricula?.Curso?.Titulo</dd>
 
         <dt class="col-sm-2">Nota</dt>
         <dd class="col-sm-10">@Model.Nota</dd>

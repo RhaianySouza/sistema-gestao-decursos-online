@@ -1,0 +1,12 @@
+﻿@model ClimaInfo
+@{
+	ViewData["Title"] = "Clima em " + Model.name;
+	Layout = "_Layout";
+}
+
+<h2>@ViewData["Title"]</h2>
+<ul>
+    <li>🌡 Temperatura: @Model.main.temp ºC</li>
+    <li>🥵 Sensação térmica: @Model.main.feels_like ºC</li>
+    <li>💧 Umidade: @Model.main.humidity%</li>
+</ul>

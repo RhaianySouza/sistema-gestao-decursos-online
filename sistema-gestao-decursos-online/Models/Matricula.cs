@@ -30,6 +30,7 @@ namespace sistema_gestao_decursos_online.Models
         [Required]
         public DateTime DataMatricula { get; set; }
 
+        [Required]
         [StringLength(20)]
         public string Status { get; set; }
 

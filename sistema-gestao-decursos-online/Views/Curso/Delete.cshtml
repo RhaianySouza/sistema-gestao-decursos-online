@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Excluir Curso";
+    Layout = "_Layout";
 }
 <!--
  * View: Curso/Delete
@@ -13,7 +14,7 @@
 <h3>Tem certeza que deseja excluir este curso?</h3>
 
 <div>
-    <h4>Detalhes do Curso</h4>
+    <h4>@ViewData["Title"]</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">ID</dt>

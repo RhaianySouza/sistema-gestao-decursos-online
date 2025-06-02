@@ -24,16 +24,16 @@ namespace sistema_gestao_decursos_online.Controllers
         public async Task<IActionResult> Index()
         {
             var avaliacoes = _context.Avaliacoes
-                .Include(a => a.Usuario)
-                .Include(a => a.Curso)
-                .OrderByDescending(a => a.Data);
+                .Include(a => a.Matricula)
+                    .ThenInclude(m => m.Usuario)
+                .Include(a => a.Matricula.Curso);
             return View(await avaliacoes.ToListAsync());
         }
 
         // GET: /Avaliacao/Create
         public IActionResult Create()
         {
-            // Aqui você pode carregar ViewBags para usuários e cursos para dropdowns, se desejar
+            
             return View();
         }
 
@@ -106,8 +106,9 @@ namespace sistema_gestao_decursos_online.Controllers
             if (id == null) return NotFound();
 
             var avaliacao = await _context.Avaliacoes
-                .Include(a => a.Usuario)
-                .Include(a => a.Curso)
+                .Include(a => a.Matricula)
+                    .ThenInclude(m => m.Usuario)
+                .Include(a => a.Matricula.Curso)
                 .SingleOrDefaultAsync(a => a.AvaliacaoId == id);
             if (avaliacao == null) return NotFound();
 
@@ -131,8 +132,9 @@ namespace sistema_gestao_decursos_online.Controllers
             if (id == null) return NotFound();
 
             var avaliacao = await _context.Avaliacoes
-                .Include(a => a.Usuario)
-                .Include(a => a.Curso)
+                .Include(a => a.Matricula)
+                    .ThenInclude(m => m.Usuario)
+                .Include(a => a.Matricula.Curso)
                 .FirstOrDefaultAsync(a => a.AvaliacaoId == id);
 
             if (avaliacao == null) return NotFound();

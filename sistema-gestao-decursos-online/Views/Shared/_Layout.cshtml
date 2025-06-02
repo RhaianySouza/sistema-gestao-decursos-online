@@ -28,21 +28,33 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Curso" ? "active" : "")"
-                               asp-controller="Curso" asp-action="Index">
-                                <i class="bi bi-book"></i> Cursos
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "About" ? "active" : "")"
+                               asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house"></i> Sobre
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Usuario" ? "active" : "")"
-                               asp-controller="Usuario" asp-action="Index">
-                                <i class="bi bi-people"></i> Usuários
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Privacy" ? "active" : "")"
+                               asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house"></i> Privacidade
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Matricula" ? "active" : "")"
-                               asp-controller="Matricula" asp-action="Index">
-                                <i class="bi bi-journal-check"></i> Matrículas
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Contact" ? "active" : "")"
+                               asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house"></i> Contato
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Clima" ? "active" : "")"
+                               asp-controller="Clima" asp-action="Index">
+                                <i class="bi bi-house"></i> API Clima Info
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Swagger" ? "active" : "")"
+                               asp-controller="Swagger" asp-action="Index">
+                                <i class="bi bi-house"></i> Swagger
                             </a>
                         </li>
                     </ul>
