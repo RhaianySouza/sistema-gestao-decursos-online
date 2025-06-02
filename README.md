@@ -12,8 +12,6 @@ Este projeto é um sistema web para gestão de cursos online, desenvolvido em AS
 * **Gestão de cursos:** Criação, edição, listagem e exclusão de cursos disponíveis.
 * **Matrículas:** Controle das matrículas dos usuários nos cursos, permitindo inscrição e cancelamento.
 * **Avaliações:** Sistema para os usuários realizarem avaliações dos cursos.
-* **Autenticação e autorização:** Controle de acesso baseado em perfis de usuários (exemplo: administrador, aluno).
-* **Interface amigável:** Uso de Razor Pages e Views para navegação intuitiva.
 * **Configuração via appsettings:** Configurações separadas para ambientes de desenvolvimento e produção.
 * **Inicialização de banco de dados:** Classe para popular o banco de dados com dados iniciais.
 
