@@ -50,59 +50,59 @@ O banco de dados é composto por 5 tabelas principais:
 - Avaliacoes
 
 1. Usuarios
-Representa os usuários do sistema (alunos).
-| Campo     | Tipo   | Restrições                            |
-| --------- | ------ | ------------------------------------- |
-| UsuarioId | int    | Chave primária                        |
-| Nome      | string | Obrigatório, máx. 100 caracteres      |
-| Email     | string | Obrigatório, máx. 150 caracteres      |
-| Senha     | string | Obrigatório, entre 6 e 100 caracteres |
-| Telefone  | string | Opcional, máx. 20 caracteres          |
+Representa os usuários do sistema (alunos).<br/>
+| Campo     | Tipo   | Restrições                            |<br/>
+| --------- | ------ | ------------------------------------- |<br/>
+| UsuarioId | int    | Chave primária                        |<br/>
+| Nome      | string | Obrigatório, máx. 100 caracteres      |<br/>
+| Email     | string | Obrigatório, máx. 150 caracteres      |<br/>
+| Senha     | string | Obrigatório, entre 6 e 100 caracteres |<br/>
+| Telefone  | string | Opcional, máx. 20 caracteres          |<br/>
 
 Relacionamentos:
 - Muitos para muitos com Cursos via CursoUsuarioModel
 - Um para muitos com Matriculas
 
 2. Cursos
-Representa os cursos disponíveis no sistema.
-| Campo        | Tipo   | Restrições                       |
-| ------------ | ------ | -------------------------------- |
-| CursoId      | int    | Chave primária                   |
-| Titulo       | string | Obrigatório, máx. 100 caracteres |
-| Descricao    | string | Opcional, máx. 500 caracteres    |
-| CargaHoraria | int    | Obrigatório                      |
+Representa os cursos disponíveis no sistema.<br/>
+| Campo        | Tipo   | Restrições                       |<br/>
+| ------------ | ------ | -------------------------------- |<br/>
+| CursoId      | int    | Chave primária                   |<br/>
+| Titulo       | string | Obrigatório, máx. 100 caracteres |<br/>
+| Descricao    | string | Opcional, máx. 500 caracteres    |<br/>
+| CargaHoraria | int    | Obrigatório                      |<br/>
 Relacionamentos:
 - Muitos-para-muitos com Usuarios via CursoUsuarioModel
 - Um-para-muitos com Matriculas
 
 3. CursoUsuarioModel
-Tabela associativa para representar um relacionamento muitos-para-muitos entre Usuarios e Cursos.
-| Campo     | Tipo | Descrição          |
-| --------- | ---- | ------------------ |
-| Id        | int  | Chave primária     |
-| UsuarioId | int  | FK para `Usuarios` |
-| CursoId   | int  | FK para `Cursos`   |
+Tabela associativa para representar um relacionamento muitos-para-muitos entre Usuarios e Cursos.<br/>
+| Campo     | Tipo | Descrição          |<br/>
+| --------- | ---- | ------------------ |<br/>
+| Id        | int  | Chave primária     |<br/>
+| UsuarioId | int  | FK para `Usuarios` |<br/>
+| CursoId   | int  | FK para `Cursos`   |<br/>
 
 
 4. Matriculas
-Representa a inscrição de um usuário em um curso.
-| Campo         | Tipo     | Descrição                                                     |
-| ------------- | -------- | ------------------------------------------------------------- |
-| MatriculaId   | int      | Chave primária                                                |
-| UsuarioId     | int      | FK para `Usuarios`                                            |
-| CursoId       | int      | FK para `Cursos`                                              |
-| DataMatricula | DateTime | Data da matrícula                                             |
-| Status        | string   | Status atual da matrícula ("Ativo", "Concluído", "Cancelado") |
+Representa a inscrição de um usuário em um curso.<br/>
+| Campo         | Tipo     | Descrição                                                     |<br/>
+| ------------- | -------- | ------------------------------------------------------------- |<br/>
+| MatriculaId   | int      | Chave primária                                                |<br/>
+| UsuarioId     | int      | FK para `Usuarios`                                            |<br/>
+| CursoId       | int      | FK para `Cursos`                                              |<br/>
+| DataMatricula | DateTime | Data da matrícula                                             |<br/>
+| Status        | string   | Status atual da matrícula ("Ativo", "Concluído", "Cancelado") |<br/>
 
 5. Avaliacoes
-Representa as avaliações feitas pelos usuários em relação aos cursos.
-| Campo       | Tipo     | Descrição                     |
-| ----------- | -------- | ----------------------------- |
-| AvaliacaoId | int      | Chave primária                |
-| MatriculaId | int      | FK para `Matriculas`          |
-| Nota        | int      | Obrigatório, entre 1 e 10     |
-| Comentario  | string   | Opcional, máx. 500 caracteres |
-| Data        | DateTime | Data da avaliação             |
+Representa as avaliações feitas pelos usuários em relação aos cursos.<br/>
+| Campo       | Tipo     | Descrição                     |<br/>
+| ----------- | -------- | ----------------------------- |<br/>
+| AvaliacaoId | int      | Chave primária                |<br/>
+| MatriculaId | int      | FK para `Matriculas`          |<br/>
+| Nota        | int      | Obrigatório, entre 1 e 10     |<br/>
+| Comentario  | string   | Opcional, máx. 500 caracteres |<br/>
+| Data        | DateTime | Data da avaliação             |<br/>
 
 6. 🔗 Relacionamentos
 - Uma avaliação pertence a uma matrícula.
@@ -115,7 +115,7 @@ Representa as avaliações feitas pelos usuários em relação aos cursos.
 1. Clone o repositório:
 
    ```
-   git clone <url-do-repositorio>
+   git clone https://github.com/RhaianySouza/sistema-gestao-decursos-online.git
    ```
 2. Abra o projeto na sua IDE (Visual Studio, VS Code).
 3. Configure a string de conexão no arquivo `appsettings.json`.
