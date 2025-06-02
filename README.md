@@ -36,6 +36,8 @@ Este projeto é um sistema web para gestão de cursos online, desenvolvido em AS
 * SQL Server (ou outro banco configurado no contexto)
 * C#
 * HTML, CSS, JavaScript para a interface
+* API Interna Swagger
+* API Externa OpenWeather Teams API
 
 ---
 ## Estrutura de Tabelas
