@@ -36,75 +36,82 @@ Este projeto é um sistema web para gestão de cursos online, desenvolvido em AS
 * SQL Server (ou outro banco configurado no contexto)
 * C#
 * HTML, CSS, JavaScript para a interface
-* API Interna Swagger
-* API Externa OpenWeather Teams API
+* API Interna Swagger: [Clique aqui para ver a documentação](https://swagger.io/solutions/api-documentation/)
+* API Externa OpenWeather Teams API: [Clique aqui para ver a documentação](https://openweathermap.org/current)
 
 ---
 ## Estrutura de Tabelas
 O banco de dados é composto por 5 tabelas principais:
-
+![image](https://github.com/user-attachments/assets/a713fdd3-f902-4904-8372-7af6813e0bcd)
 - Usuarios
 - Cursos
 - CursoUsuario
 - Matriculas
 - Avaliacoes
 
-1. Usuarios
-Representa os usuários do sistema (alunos).<br/>
+### 1. Usuarios
+Representa os usuários do sistema (alunos).<br/><pre>
 | Campo     | Tipo   | Restrições                            |<br/>
 | --------- | ------ | ------------------------------------- |<br/>
 | UsuarioId | int    | Chave primária                        |<br/>
 | Nome      | string | Obrigatório, máx. 100 caracteres      |<br/>
 | Email     | string | Obrigatório, máx. 150 caracteres      |<br/>
 | Senha     | string | Obrigatório, entre 6 e 100 caracteres |<br/>
-| Telefone  | string | Opcional, máx. 20 caracteres          |<br/>
+| Telefone  | string | Opcional, máx. 20 caracteres          |<br/></pre>
 
-Relacionamentos:
+🔗 Relacionamentos:
 - Muitos para muitos com Cursos via CursoUsuarioModel
 - Um para muitos com Matriculas
 
-2. Cursos
-Representa os cursos disponíveis no sistema.<br/>
+### 2. Cursos
+Representa os cursos disponíveis no sistema.<br/><pre>
 | Campo        | Tipo   | Restrições                       |<br/>
 | ------------ | ------ | -------------------------------- |<br/>
 | CursoId      | int    | Chave primária                   |<br/>
 | Titulo       | string | Obrigatório, máx. 100 caracteres |<br/>
 | Descricao    | string | Opcional, máx. 500 caracteres    |<br/>
-| CargaHoraria | int    | Obrigatório                      |<br/>
-Relacionamentos:
+| CargaHoraria | int    | Obrigatório                      |<br/></pre>
+🔗 Relacionamentos:
 - Muitos-para-muitos com Usuarios via CursoUsuarioModel
 - Um-para-muitos com Matriculas
 
-3. CursoUsuarioModel
-Tabela associativa para representar um relacionamento muitos-para-muitos entre Usuarios e Cursos.<br/>
+### 3. CursoUsuarioModel
+Tabela associativa para representar um relacionamento muitos-para-muitos entre Usuarios e Cursos.<br/><pre>
 | Campo     | Tipo | Descrição          |<br/>
 | --------- | ---- | ------------------ |<br/>
-| Id        | int  | Chave primária     |<br/>
 | UsuarioId | int  | FK para `Usuarios` |<br/>
-| CursoId   | int  | FK para `Cursos`   |<br/>
+| CursoId   | int  | FK para `Cursos`   |<br/></pre>
+🔗 Relacionamentos
+- Representa um relacionamento simples N:N entre Curso e Aluno.
+- Não possui atributos adicionais, apenas os campos: CursoId (FK) x AlunoId (FK)
+- Pode ser útil para consultas rápidas, quando não é necessário histórico ou detalhes como status da matrícula.
 
-
-4. Matriculas
-Representa a inscrição de um usuário em um curso.<br/>
+### 4. Matriculas
+Representa a inscrição de um usuário em um curso.<br/><pre>
 | Campo         | Tipo     | Descrição                                                     |<br/>
 | ------------- | -------- | ------------------------------------------------------------- |<br/>
 | MatriculaId   | int      | Chave primária                                                |<br/>
 | UsuarioId     | int      | FK para `Usuarios`                                            |<br/>
 | CursoId       | int      | FK para `Cursos`                                              |<br/>
 | DataMatricula | DateTime | Data da matrícula                                             |<br/>
-| Status        | string   | Status atual da matrícula ("Ativo", "Concluído", "Cancelado") |<br/>
+| Status        | string   | Status atual da matrícula ("Ativo", "Concluído", "Cancelado") |<br/></pre>
+🔗 Relacionamentos
+- Representa um relacionamento N:N entre Curso e Aluno, mas com atributos adicionais.
+- Ideal para controle real do sistema, pois permite:
+   - Gerenciar o estado de participação do aluno (ativo, concluído, pendente).
+   - Armazenar a data da matrícula.
+   - Rastrear o progresso.
 
-5. Avaliacoes
-Representa as avaliações feitas pelos usuários em relação aos cursos.<br/>
+### 5. Avaliacoes
+Representa as avaliações feitas pelos usuários em relação aos cursos.<br/><pre>
 | Campo       | Tipo     | Descrição                     |<br/>
 | ----------- | -------- | ----------------------------- |<br/>
 | AvaliacaoId | int      | Chave primária                |<br/>
 | MatriculaId | int      | FK para `Matriculas`          |<br/>
 | Nota        | int      | Obrigatório, entre 1 e 10     |<br/>
 | Comentario  | string   | Opcional, máx. 500 caracteres |<br/>
-| Data        | DateTime | Data da avaliação             |<br/>
-
-6. 🔗 Relacionamentos
+| Data        | DateTime | Data da avaliação             |<br/></pre>
+🔗 Relacionamentos
 - Uma avaliação pertence a uma matrícula.
 - Cada matrícula pode ter zero ou uma avaliação associada.
 
@@ -125,5 +132,5 @@ Representa as avaliações feitas pelos usuários em relação aos cursos.<br/>
 ---
 ## Autores
 
-Andriele, Ciro, Eric, Leonardo, Rhaiany
+Ciro, Leonardo, Rhaiany
 
