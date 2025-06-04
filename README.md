@@ -42,7 +42,8 @@ Este projeto é um sistema web para gestão de cursos online, desenvolvido em AS
 ---
 ## Estrutura de Tabelas
 O banco de dados é composto por 5 tabelas principais:
-![image](https://github.com/user-attachments/assets/a713fdd3-f902-4904-8372-7af6813e0bcd)
+![image](https://github.com/user-attachments/assets/409a9164-a145-4e3e-b834-12eaf78dd892)
+
 - Usuarios
 - Cursos
 - CursoUsuario
